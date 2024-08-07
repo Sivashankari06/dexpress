@@ -1,0 +1,39 @@
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.logo{
+    font-weight: bold;
+}
+
+.cont{
+    background-color: #FFF4E2; 
+    display: flex;
+    justify-content: center; 
+    width:100%;     
+}
+
+.inside-con{
+    background-color: #FFFCF7;
+    border-radius: 20px;
+    padding:50px;   
+    width: 1000px;
+    margin: 50px auto;      
+}
+
+nav {
+    text-align: right;
+}
+
+nav li {
+    padding: 0px 12px 12px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+    padding: 0px;
+}
