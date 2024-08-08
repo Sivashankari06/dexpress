@@ -35,7 +35,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+               "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
             ],
             "scripts": []
           },
@@ -104,7 +105,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+               "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
             ],
             "scripts": [
               "node_modules/@popperjs/core/dist/umd/popper.min.js",

@@ -1,11 +1,12 @@
 body{
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif!important;
     font-weight: 100;
     font-style: normal;
 }
 
 .logo{
     font-weight: bold;
+    color:#2F2E41;
 }
 
 .cont{
@@ -18,22 +19,133 @@ body{
 .inside-con{
     background-color: #FFFCF7;
     border-radius: 20px;
-    padding:50px;   
-    width: 1000px;
+    padding:25px;   
+    width: 900px;
     margin: 50px auto;      
 }
 
-nav {
+.nav_menu {
     text-align: right;
 }
 
-nav li {
+.nav_menu li {
     padding: 0px 12px 12px;
     font-weight: bold;
+    font-size: 10px;
+    margin: 0px 12px;
+    color:#2F2E41;
 }
 
-nav ul {
+.nav_menu ul {
     display: inline-flex;
     list-style: none;
     padding: 0px;
+}
+
+.profile_span{
+    margin: 0px 0px 0px 10px;
+}
+
+.profile_img{
+    width:30px;
+    border-radius: 50%;
+}
+
+.logo_img{
+    width:40px;   
+}
+
+
+.skate_text{
+    font-weight: bold;
+    color:#2F2E41;
+    font-size: 40px;
+}
+
+.brand_text{
+    font-weight: bold;
+    color:#464646;
+    font-size: 15px;
+}
+
+.famous_text{
+    font-weight: bold;
+    color:#858585;
+    font-size:8px
+}
+
+.para_text{
+    color:#aaa;
+    font-size:8px
+}
+
+.logo_div ul{
+    padding: 0px;
+    text-align: right;
+    margin-top: 10px;
+}
+.logo_div li {
+    margin: 0px 0px 0px 30px;
+    padding: 0px 0px 12px 30px;
+    display: inline-flex;
+    list-style: none;
+}
+
+.wooden_text{
+    font-size: 11px;
+    color:#aaa;
+}
+
+.btn_cls{
+    width:80px;
+    border: none;
+    font-size: 12px;
+    background-color: #fff0;
+    font-weight: bold;    
+    margin-top: 8px;
+}
+
+.btn_div{
+    background-color: #ff7200;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+
+
+.bg_img{
+    width:400px;
+    height:400px;
+    position: absolute;
+    right: 0;
+    left:-50px;
+    top: -66px;
+}
+
+.icon_medium{
+    width:20px;
+}
+
+.big_font{
+    font-size: 13px;
+    margin: 0px 0px 0px 10px;
+    font-weight: bold;
+    color:#2F2E41
+}
+
+.small_font{
+    font-size: 10px;
+    margin: 0px 0px 0px 10px;
+    color:#858585;
+}
+
+.icon_td{
+    background-color: #ff7200;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.pad_20{
+    padding: 20px;
 }
