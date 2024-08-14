@@ -1,0 +1,16 @@
+<div class="div-main">
+    <h1>Sample</h1>
+    <div class="div-content">
+        <mat-sidenav-container class="sidenav-container">
+            <mat-sidenav #sidenav mode="side" opened="true">
+              <mat-nav-list class="p-0">               
+              </mat-nav-list>                        
+            </mat-sidenav>          
+            <mat-sidenav-content>      
+              <div class="content">                               
+                 <router-outlet></router-outlet>
+              </div>
+            </mat-sidenav-content>
+        </mat-sidenav-container>          
+    </div>
+</div>

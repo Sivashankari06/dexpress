@@ -1,0 +1,56 @@
+<div class="div-main">
+    <h1>Account Settings</h1>
+    <div class="div-content">
+        <mat-sidenav-container class="sidenav-container">
+        
+            <mat-sidenav #sidenav mode="side" opened="true">
+              <!-- <mat-nav-list class="p-0">
+                <button [ngClass]="{'active': currentComponent === 'dashboard'}" class="btn" (click)="showComponent('dashboard')">Dashboard</button>
+              </mat-nav-list> -->
+              <mat-nav-list class="p-0">  
+                <button [ngClass]="{'active': currentComponent === 'myprofile'}" class="btn" (click)="showComponent('myprofile')">My Profile</button>
+              </mat-nav-list> 
+              <mat-nav-list class="p-0">  
+                <button class="btn">Security</button>
+              </mat-nav-list> 
+              <mat-nav-list class="p-0">  
+                <button class="btn">Teams</button>
+              </mat-nav-list> 
+              <mat-nav-list class="p-0">  
+                <button class="btn">Teams Member</button>
+              </mat-nav-list> 
+              <mat-nav-list class="p-0">  
+                <button class="btn">Notifications</button>
+              </mat-nav-list> 
+              <mat-nav-list class="p-0">  
+                <button class="btn">Billing</button>
+              </mat-nav-list> 
+              <mat-nav-list class="p-0">  
+                <button class="btn">Data Export</button>
+              </mat-nav-list>               
+              <mat-nav-list class="p-0">  
+                <button [ngClass]="{'active': currentComponent === 'tobby'}" class="btn" (click)="showComponent('tobby')">Tobby</button>
+              </mat-nav-list>    
+              <mat-nav-list class="p-0">  
+                <button class="btn btn-delete" (click)="openDeleteAccountModal()">Delete Account</button>
+              </mat-nav-list>             
+            </mat-sidenav>
+         
+                  
+            <mat-sidenav-content>      
+              <div class="div-content">
+                 <!-- <ng-container *ngIf="currentComponent === 'dashboard'">
+                  <app-dashboard></app-dashboard>
+                </ng-container> -->
+                <ng-container *ngIf="currentComponent === 'myprofile'">
+                  <app-myprofile></app-myprofile>
+                </ng-container>  
+                <ng-container *ngIf="currentComponent === 'tobby'">
+                  <app-tobby></app-tobby>
+                </ng-container>               
+                 <router-outlet></router-outlet>
+              </div>
+            </mat-sidenav-content>
+        </mat-sidenav-container>          
+    </div>
+</div>

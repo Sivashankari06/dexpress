@@ -1,0 +1,47 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="side" opened="true">
+      <mat-nav-list class="p-0">
+        <button [ngClass]="{'active': currentComponent === 'dashboard'}" class="btn" (click)="showComponent('dashboard')">Dashboard</button>
+      </mat-nav-list>
+      <!-- <mat-nav-list class="p-0">  
+        <button [ngClass]="{'active': currentComponent === 'login'}" class="btn" (click)="showComponent('login')">Login</button>
+      </mat-nav-list> -->
+      <mat-nav-list class="p-0">  
+        <button [ngClass]="{'active': currentComponent === 'sample'}" class="btn" (click)="showComponent('sample')">Sample</button>
+      </mat-nav-list>
+      <mat-nav-list class="p-0">  
+        <button [ngClass]="{'active': currentComponent === 'accountsettings'}" class="btn" (click)="showComponent('accountsettings')">Account Settings</button>
+      </mat-nav-list>
+      <!-- <mat-nav-list class="p-0">  
+        <button [ngClass]="{'active': currentComponent === 'modal'}" class="btn" (click)="showComponent('modal')">modal</button>
+      </mat-nav-list> -->
+    </mat-sidenav>
+    
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <!-- <mat-icon>menu</mat-icon> -->
+      </button>
+      <!-- <span>Dashboard</span> -->
+    </mat-toolbar>
+    <mat-sidenav-content>      
+      <div class="content">
+         <ng-container *ngIf="currentComponent === 'login'">
+          <app-login></app-login>
+        </ng-container>
+        <ng-container *ngIf="currentComponent === 'dashboard'">
+          <app-dashboard></app-dashboard>
+        </ng-container>
+        <ng-container *ngIf="currentComponent === 'sample'">
+          <app-sample></app-sample>
+        </ng-container>
+        <ng-container *ngIf="currentComponent === 'accountsettings'">
+          <app-accountsettings></app-accountsettings>
+        </ng-container>
+        <!-- <ng-container *ngIf="currentComponent === 'modal'">
+          <app-modal></app-modal>
+        </ng-container> -->
+         <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

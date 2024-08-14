@@ -1,0 +1,23 @@
+.sidenav-container {
+    height: 100%;
+  }  
+  mat-sidenav {
+    width: 250px;
+  } 
+  
+  .content {
+    margin: 0px 0px 0px 2px;
+  }
+  
+  button{
+    text-align: left;
+  }
+  button.active {
+    width: 100%;
+    background-color: #ff7200;; /* Active background color */
+    color: #fffcf7; /* Active text color */
+    padding: 8px;
+    border: none;
+    outline: none!important;
+    font-size: 16px!important;
+  }
